@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="rU2-FS-P81" customClass="BatchPickupCell" customModule="MixogyMain" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rU2-FS-P81" id="YHc-oH-yw8">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okz-tA-I2n">
+                        <rect key="frame" x="20" y="0.0" width="280" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Agent Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2f-Zw-yVg">
+                                <rect key="frame" x="15" y="8" width="87" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mal Docklands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HH-FO-nww">
+                                <rect key="frame" x="15" y="28.5" width="162.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="200 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coC-TE-Fk1">
+                                <rect key="frame" x="189.5" y="21" width="44.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlacePin" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-rx-rYJ">
+                                <rect key="frame" x="246" y="18.5" width="18" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="XOT-ih-0OL"/>
+                                    <constraint firstAttribute="width" constant="18" id="x08-h9-Abi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9HH-FO-nww" firstAttribute="top" secondItem="k2f-Zw-yVg" secondAttribute="bottom" id="6rx-Ov-eMo"/>
+                            <constraint firstAttribute="trailing" secondItem="WEw-rx-rYJ" secondAttribute="trailing" constant="16" id="Gxs-9s-aNX"/>
+                            <constraint firstItem="k2f-Zw-yVg" firstAttribute="top" secondItem="okz-tA-I2n" secondAttribute="top" constant="8" id="gK5-iK-ZHW"/>
+                            <constraint firstItem="coC-TE-Fk1" firstAttribute="leading" secondItem="9HH-FO-nww" secondAttribute="trailing" constant="12" id="hEr-jY-6dr"/>
+                            <constraint firstItem="WEw-rx-rYJ" firstAttribute="top" secondItem="k2f-Zw-yVg" secondAttribute="centerY" id="hu6-NX-Pgj"/>
+                            <constraint firstItem="WEw-rx-rYJ" firstAttribute="leading" secondItem="coC-TE-Fk1" secondAttribute="trailing" constant="12" id="kbZ-9a-NzE"/>
+                            <constraint firstItem="k2f-Zw-yVg" firstAttribute="leading" secondItem="okz-tA-I2n" secondAttribute="leading" constant="15" id="nim-26-YGP"/>
+                            <constraint firstItem="coC-TE-Fk1" firstAttribute="centerY" secondItem="WEw-rx-rYJ" secondAttribute="centerY" id="spt-5V-gMS"/>
+                            <constraint firstAttribute="bottom" secondItem="9HH-FO-nww" secondAttribute="bottom" constant="7" id="tgJ-dj-3YT"/>
+                            <constraint firstItem="9HH-FO-nww" firstAttribute="leading" secondItem="okz-tA-I2n" secondAttribute="leading" constant="15" id="zNH-nK-YKD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="okz-tA-I2n" secondAttribute="bottom" constant="15" id="2W8-vY-cCF"/>
+                    <constraint firstItem="okz-tA-I2n" firstAttribute="top" secondItem="YHc-oH-yw8" secondAttribute="top" id="NwK-8j-whR"/>
+                    <constraint firstAttribute="trailing" secondItem="okz-tA-I2n" secondAttribute="trailing" constant="20" id="boT-3M-089"/>
+                    <constraint firstItem="okz-tA-I2n" firstAttribute="leading" secondItem="YHc-oH-yw8" secondAttribute="leading" constant="20" id="wyS-8d-2Sj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="2OG-2n-35w"/>
+            <connections>
+                <outlet property="containerView" destination="okz-tA-I2n" id="fud-Pa-DIs"/>
+                <outlet property="distanceLabel" destination="coC-TE-Fk1" id="eqJ-4r-Ugl"/>
+                <outlet property="nameTitleLabel" destination="k2f-Zw-yVg" id="Xz4-fq-xyC"/>
+                <outlet property="titleLabel" destination="9HH-FO-nww" id="bn2-UW-d4W"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="-2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PlacePin" width="13.5" height="18"/>
+    </resources>
+</document>

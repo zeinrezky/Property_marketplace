@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="InboxCell" customModule="MixogyMain" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hr-9h-4Ek">
+                        <rect key="frame" x="20" y="8" width="280" height="81"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase Completed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zT-rq-ygj">
+                                <rect key="frame" x="12" y="8" width="124" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="12"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.66274509803921566" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 October 2019 : 13:30" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJX-pT-hGB">
+                                <rect key="frame" x="172.5" y="8" width="95.5" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="11"/>
+                                <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One OK ROCK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G1-Ix-kPL">
+                                <rect key="frame" x="12" y="44.5" width="256" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="81" id="5Yu-Sp-7YW"/>
+                            <constraint firstItem="5G1-Ix-kPL" firstAttribute="trailing" secondItem="tJX-pT-hGB" secondAttribute="trailing" id="TDb-2L-5lS"/>
+                            <constraint firstItem="4zT-rq-ygj" firstAttribute="leading" secondItem="4Hr-9h-4Ek" secondAttribute="leading" constant="12" id="Xt0-fQ-ShY"/>
+                            <constraint firstAttribute="trailing" secondItem="tJX-pT-hGB" secondAttribute="trailing" constant="12" id="gmB-Qw-kSb"/>
+                            <constraint firstItem="4zT-rq-ygj" firstAttribute="top" secondItem="4Hr-9h-4Ek" secondAttribute="top" constant="8" id="opg-iO-rUn"/>
+                            <constraint firstItem="tJX-pT-hGB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4zT-rq-ygj" secondAttribute="trailing" constant="8" id="raz-kA-Dgi"/>
+                            <constraint firstItem="tJX-pT-hGB" firstAttribute="top" secondItem="4zT-rq-ygj" secondAttribute="top" id="u01-la-2Hq"/>
+                            <constraint firstAttribute="centerX" secondItem="4zT-rq-ygj" secondAttribute="trailing" constant="4" id="uS7-cj-Ofc"/>
+                            <constraint firstItem="5G1-Ix-kPL" firstAttribute="top" secondItem="tJX-pT-hGB" secondAttribute="bottom" constant="6" id="xgP-Ve-5ZM"/>
+                            <constraint firstItem="5G1-Ix-kPL" firstAttribute="leading" secondItem="4zT-rq-ygj" secondAttribute="leading" id="yaY-Cs-FKq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4Hr-9h-4Ek" secondAttribute="trailing" constant="20" id="0Zv-bx-eaP"/>
+                    <constraint firstAttribute="bottom" secondItem="4Hr-9h-4Ek" secondAttribute="bottom" constant="8" id="Du3-hK-PAV"/>
+                    <constraint firstItem="4Hr-9h-4Ek" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="XKJ-DT-kZN"/>
+                    <constraint firstItem="4Hr-9h-4Ek" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="obm-tQ-wB0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="4Hr-9h-4Ek" id="n3g-cb-3pI"/>
+                <outlet property="dateLabel" destination="tJX-pT-hGB" id="68Z-q9-AXR"/>
+                <outlet property="statusLabel" destination="4zT-rq-ygj" id="ycI-uY-6Yy"/>
+                <outlet property="titleLabel" destination="5G1-Ix-kPL" id="xxr-zP-q4Y"/>
+            </connections>
+            <point key="canvasLocation" x="-14.492753623188406" y="-16.40625"/>
+        </tableViewCell>
+    </objects>
+</document>

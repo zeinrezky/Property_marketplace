@@ -1,0 +1,202 @@
+/* 
+  Localizable.strings
+  MixogyMain
+
+  Created by ABDUL AZIS H on 26/10/20.
+  Copyright © 2020 Mixogy. All rights reserved.
+*/
+
+"edit" = "Ubah";
+"profile" = "Profil";
+"name" = "Nama";
+"address" = "Alamat";
+"phone-number" = "Nomor HP";
+
+"home" = "Beranda";
+"purchases" = "Pembelian";
+"sell-list" = "Penjualan";
+"inbox" = "Kotak Masuk";
+
+"nearby" = "Terdekat";
+"nearby-empty" = "Tidak ada barang atau radius terlalu kecil";
+
+"profile-logout" = "Keluar";
+"profile-lang" = "ID";
+"profile-change-language" = "Ubah Bahasa";
+"profile-radius" = "Radius Sekitar";
+"profile-change-password" = "Ubah Kata Sandi";
+"profile-see-transaction" = "Lihat Transaksi";
+"profile-payment-receive" = "Pembayaran Diterima Tanggal";
+"profile-add-address" = "Tambahkan Alamat";
+
+"location" = "Lokasi";
+"items" = "Barang-barang";
+"available" = "Tersedia";
+"sold" = "Terjual";
+"seller-price" = "Harga Penjual";
+"distance-to-agent" = "Jarak ke Agen";
+"added-on" = "Terdaftar pada";
+"item-seat" = "Tempat Duduk";
+"ready-to-pick" = "Barang Siap diambil";
+"delivery" = "Pengiriman";
+
+"date" = "Tanggal";
+"type" = "Tipe";
+"seat" = "Tempat Duduk";
+"item-description" = "Deskripsi Barang";
+"photos" = "Foto";
+"cancel-listing" = "Batal Pendaftaran";
+
+"my-purchase" = "Daftar Pembelian";
+"pending-payment" = "Pembayaran Tertunda";
+"see-history" = "Lihat Riwayat";
+"item-name" = "Nama Barang";
+"grace-period" = "Masa tenggang";
+"on-hand" = "Di tangan";
+"ready-to-pickup" = "Siap diambil";
+"on-delivery" = "Dalam Pengiriman";
+"pending" = "Tertunda";
+"pickup-available-on" = "Barang siap diambil pada";
+
+"take-me-back" = "Kembali";
+"you-not-logged-in" = "Anda belum masuk";
+"password" = "Kata Sandi";
+"i-forgot-my-password" = "Lupa Kata Sandi";
+"login" = "Masuk";
+"dont-have-account?" = "Belum punya akun? :(";
+"register" = "Daftar";
+
+"bank-number" = "Nomor Rekening";
+"ktp-number" = "Nomor KTP";
+"upload-ktp" = "Unggah KTP";
+"cancel" = "Batal";
+"i-agree-term" = "Saya setuju dengan persyaratan penggunaan ...";
+"we-have-send-code" = "Kode OTP sudah dikirimkan ke nomor terdaftar";
+"input-otp" = "Masukkan kode OTP";
+"resend-otp" = "Kirim Ulang Kode OTP";
+"send-otp" = "Kirim Kode OTP";
+"confirm-password" = "Konfirmasi Kata Sandi";
+"full-name" = "Nama Lengkap";
+"confirm" = "Konfirmasi";
+
+"old-password" = "Kata Sandi Lama";
+"confirm-old-password" = "Konfirmasi Kata Sandi Lama";
+"new-password" = "Kata Sandi Baru";
+"confirm-new-password" = "Konfirmasi Kata Sandi Baru";
+
+"you-worry" = "Sepertinya kamu kebingungan, jangan khawatir!";
+"here-some-guide" = "Disini ada beberapa panduan untuk kenyamanan kamu";
+"how-to-buy-items" = "Cara Beli barang";
+"how-to-sell-items" = "Cara Jual Barang";
+
+"buy1" = "Pertama... pilihlah kategori yang kamu cari, lalu pilihlah barang yang kamu inginkan";
+"buy2" = "Lalu pilih lokasi dan tanggal yang kamu inginkan.";
+"buy3" = "Kamu bisa langsung masukan ke keranjang, atau kamu bisa periksa detil barang dahulu.";
+"buy4" = "Tekan tombol ini untuk melihat keranjang.";
+"buy5" = "Tekan tombol \"Pay\" setelah kamu pilih cara pengambilan barang.";
+"buy6" = "Status itemmu tergantung cara pengambilan barang-nya";
+"buy7" = "Once the payment completed show your QR code to the corresponding agent.";
+
+"sell1" = "Masuk menu \"Daftar Penjualan\"";
+"sell2" = "Pilih menu \"Jual Barang\"";
+"sell3" = "Isi informasi yang dibutuhkan";
+"sell4" = "Pilih cara penjualan \"Agen\"";
+"sell5" = "Barangmu akan terdaftar sebagai \"Titipkan ke agen\".";
+"sell6" = "Kamu bisa cari agen terdekat dengan tombol ini.";
+"sell7" = "Meet up with your agent and let your corresponding agent to scan your QR code.";
+"next" = "Lanjut";
+"back" = "Kembali";
+"exit" = "Selesai";
+
+"select" = "Pilih";
+"informaton" = "Informasi";
+"data-saved" = "Data telah disimpan";
+"Something went wrong" = "Terjadi Kesalahan";
+
+"register-as-seller" = "Daftar Sebagai Penjual";
+"listing-tab" = "Daftar Penjualan";
+"payment-status" = "Status Pembayaran";
+"sell-item" = "Jual Barang";
+"see-history" = "Lihat Riwayat";
+"listing-status" = "Terdaftar";
+"listing-on-agent" = "Terdaftar di Agen";
+"give-to-agent" = "Titipkan ke Agen";
+"send-item" = "Kirim Item";
+"cancel-listing" = "Batal Pendaftaran";
+"waiting-for-payment" = "Menunggu Pembayaran";
+"grace-period" = "Masa tenggang";
+"item-photos" = "Foto Item";
+"item-type" = "Tipe Item";
+"category" = "Kategori";
+"front" = "Depan";
+"behind" = "Belakang";
+"item-code" = "Kode Item";
+
+"search-item-name" = "Cari Nama Barang";
+"time" = "Jam";
+"method" = "Metode Penjualan";
+"agent" = "Agen";
+"keep-item" = "Simpan Sendiri";
+"ticket-photos" = "Foto Tiket";
+"your-price" = "Harga Jual";
+"you-will-receive" = "Jumlah yang akan diterima";
+"studio-and-item-seat" = "Studio dan Tempat Duduk";
+"multiple-items" = "Banyak barang";
+"add-to-list" = "Daftarkan";
+"description" = "Deskripsi";
+
+"Choose Media" = "Pilih Media";
+"Camera" = "Kamera";
+"Gallery" = "Galeri";
+
+"qr-to-agent" = "Tunjukkan kode QR ini ke Agen kami. Berikan item Anda ke Agen kami";
+
+"sell-history" = "Riwayat Penjualan";
+"canceled" = "Dibatalkan";
+"item-detail" = "Detail Barang";
+
+"rate-our-agent" = "Beri nilai Agen kami";
+"submit" = "Kirim";
+
+"reason" = "Alasan";
+
+"cart" = "Keranjang";
+"collection-method" = "Cara Pengambilan Barang";
+"delivery" = "Pengiriman";
+"pickup" = "Pengambilan Langsung";
+"batch-pickup" = "Pengambilan Kumpulan";
+"delivery-fee" = "Biaya Pengiriman";
+"transaction-fee" = "Biaya Transaksi";
+"subtotal" = "Subtotal";
+"pay-with-total" = "Bayar dengan Total";
+"clear-all" = "Hapus Semua";
+"pickup-location" = "Lokasi Pengambilan";
+"add" = "Tambah";
+"add-address" = "Tambah Alamat";
+"edit-address" = "Ubah Alamat";
+"detail-address" = "Detail Alamat";
+"save" = "Simpan";
+"choose-location" = "Pilih Lokasi";
+"province" = "Provinsi";
+"city" = "Kota";
+"agent-name" = "Nama Agen";
+"select-pickup-location" = "Pilih Lokasi Pengambilan";
+
+"open-gopay" = "Buka GOPAY";
+"see-item-details" = "Lihat Detail Barang";
+"payment" = "Pembayaran";
+"ended" = "Berakhir";
+
+"buyer-name" = "Buyer Name";
+"confirm-send" = "Konfirmasi Kirim";
+"courier-name" = "Nama Kurir";
+"resi-number" = "Nomor Resi";
+"contact-number" = "Nomor Kontak";
+
+"add-item" = "Tambah Barang";
+"front-side" = "Sisi Depan";
+"back-side" = "Sisi Belakang";
+"select-category" = "Pilih Kategori";
+
+"call" = "Panggil";
+"our-agent" = "Agen Kami";

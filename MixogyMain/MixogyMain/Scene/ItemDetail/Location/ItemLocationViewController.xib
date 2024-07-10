@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemLocationViewController" customModule="MixogyMain" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="XVW-FQ-tJa" id="OCm-ai-B8e"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XVW-FQ-tJa">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2p-9j-02L">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxb-IO-TbZ">
+                            <rect key="frame" x="20" y="10" width="25" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="F9V-Fq-fHf"/>
+                                <constraint firstAttribute="width" constant="25" id="U0R-oI-tfd"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Back"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="kfa-Ko-bR6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zxb-IO-TbZ" firstAttribute="centerY" secondItem="n2p-9j-02L" secondAttribute="centerY" id="LvZ-Iw-GlF"/>
+                        <constraint firstAttribute="height" constant="44" id="PSr-lj-h0K"/>
+                        <constraint firstItem="zxb-IO-TbZ" firstAttribute="leading" secondItem="n2p-9j-02L" secondAttribute="leading" constant="20" id="sui-At-huQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="XVW-FQ-tJa" firstAttribute="top" secondItem="n2p-9j-02L" secondAttribute="bottom" id="4ha-lq-zOo"/>
+                <constraint firstItem="n2p-9j-02L" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6Ns-i9-xOu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XVW-FQ-tJa" secondAttribute="trailing" id="GUL-lj-tmu"/>
+                <constraint firstItem="XVW-FQ-tJa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eL8-7x-RxJ"/>
+                <constraint firstItem="n2p-9j-02L" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fNV-T9-L8A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XVW-FQ-tJa" secondAttribute="bottom" id="imO-ar-D6G"/>
+                <constraint firstItem="n2p-9j-02L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="md3-Ng-tAh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="25" height="23.5"/>
+    </resources>
+</document>

@@ -1,0 +1,202 @@
+/* 
+  Localizable.strings
+  MixogyMain
+
+  Created by ABDUL AZIS H on 26/10/20.
+  Copyright © 2020 Mixogy. All rights reserved.
+*/
+
+"edit" = "Edit";
+"profile" = "Profile";
+"name" = "Name";
+"address" = "Address";
+"phone-number" = "Phone Number";
+
+"home" = "Home";
+"purchases" = "Purchases";
+"sell-list" = "Sell List";
+"inbox" = "Inbox";
+
+"nearby" = "Nearby";
+"nearby-empty" = "No available item or radius too short";
+
+"profile-logout" = "Log Out";
+"profile-lang" = "EN";
+"profile-change-language" = "Change Language";
+"profile-radius" = "Nearby Radius";
+"profile-change-password" = "Change Password";
+"profile-see-transaction" = "See Transactions";
+"profile-payment-receive" = "Payment Received on";
+"profile-add-address" = "Add Address";
+
+"location" = "Location";
+"items" = "Items";
+"available" = "Available";
+"sold" = "sold";
+"seller-price" = "Seller Price";
+"distance-to-agent" = "Distance to Agent";
+"added-on" = "Added on";
+"item-seat" = "Item Seat";
+"ready-to-pick" = "Ready to pick";
+"delivery" = "Delivery";
+
+"date" = "Date";
+"type" = "Type";
+"seat" = "Seat";
+"item-description" = "Item Description";
+"photos" = "Photos";
+"cancel-listing" = "Cancel Listing";
+
+"my-purchase" = "My Purchase";
+"pending-payment" = "Pending Payment";
+"see-history" = "See History";
+"item-name" = "Item Name";
+"grace-period" = "Grace Period";
+"on-hand" = "On Hand";
+"ready-to-pickup" = "Ready to pickup";
+"on-delivery" = "On Delivery";
+"pending" = "Pending";
+"pickup-available-on" = "Pickup available on";
+
+"take-me-back" = "Take Me Back";
+"you-not-logged-in" = "You're not logged in";
+"password" = "Password";
+"i-forgot-my-password" = "I forgot my Password";
+"login" = "Login";
+"dont-have-account?" = "Don't have account? :(";
+"register" = "Register";
+
+"bank-number" = "Bank Number";
+"ktp-number" = "KTP Number";
+"upload-ktp" = "Upload KTP";
+"cancel" = "Cancel";
+"i-agree-term" = "I agree to the terms of use ...";
+"we-have-send-code" = "We have send a code to this number";
+"input-otp" = "Input OTP";
+"resend-otp" = "Resend OTP Number";
+"send-otp" = "Send OTP Number";
+"confirm-password" = "Confirm Password";
+"full-name" = "Full Name";
+"confirm" = "Confirm";
+
+"old-password" = "Old Password";
+"confirm-old-password" = "Confirm Old Password";
+"new-password" = "New Password";
+"confirm-new-password" = "Confirm New Password";
+
+"you-worry" = "it seems you are confused. but don't worry!";
+"here-some-guide" = "Here are some guide for your convenience";
+"how-to-buy-items" = "How to buy items";
+"how-to-sell-items" = "How to sell items";
+
+"buy1" = "Firstly... select the category you prefer, then select the item you want";
+"buy2" = "Then select location and date you wanted.";
+"buy3" = "You can put it inside to cart right away, or you can check the detail";
+"buy4" = "Press the highlighted icon to check out";
+"buy5" = "Press \"pay\" after you've decided on collection method";
+"buy6" = "Your item status depends on your collection method.";
+"buy7" = "Once the payment completed show your QR code to the corresponding agent.";
+
+"sell1" = "Enter \"sell list\" menu";
+"sell2" = "Select \"Sell Item\" menu";
+"sell3" = "Fill in the required Information";
+"sell4" = "Choose \"Agent\" Method";
+"sell5" = "Your item will be listed as \"Give to agent\"";
+"sell6" = "You can find nearby agent with this button";
+"sell7" = "Meet up with your agent and let your corresponding agent to scan your QR code.";
+"next" = "Next";
+"back" = "Back";
+"exit" = "Exit";
+
+"select" = "Select";
+"informaton" = "Information";
+"data-saved" = "Data has been saved";
+"Something went wrong" = "Something went wrong";
+
+"register-as-seller" = "Register as Seller";
+"listing-tab" = "Listing";
+"payment-status" = "Payment Status";
+"sell-item" = "Sell Item";
+"see-history" = "See History";
+"listing-status" = "Listing";
+"listing-on-agent" = "Listing On Agent";
+"give-to-agent" = "Give to Agent";
+"send-item" = "Send Item";
+"cancel-listing" = "Cancel Listing";
+"waiting-for-payment" = "Waiting for Payment";
+"grace-period" = "Grace Period";
+"item-photos" = "Item Photos";
+"item-type" = "Item Type";
+"category" = "Category";
+"front" = "Front";
+"behind" = "Back";
+"item-code" = "Item Code";
+
+"search-item-name" = "Search Item Name";
+"time" = "Time";
+"method" = "Method";
+"agent" = "Agent";
+"keep-item" = "Keep Item" ;
+"ticket-photos" = "Ticket Photos";
+"your-price" = "Your Selling Price";
+"you-will-receive" = "You Will Receive";
+"studio-and-item-seat" = "Studio and Item Seat";
+"multiple-items" = "Multiple Items" ;
+"add-to-list" = "Add to List";
+"description" = "Description";
+
+"Choose Media" = "Choose Media";
+"Camera" = "Camera";
+"Gallery" = "Gallery";
+
+"qr-to-agent" = "Show this QR code to our Agent Give your item to our Agent";
+
+"sell-history" = "Sell History";
+"canceled" = "Canceled";
+"item-detail" = "Item Detail";
+
+"rate-our-agent" = "Rate our Agent";
+"submit" = "Submit";
+
+"reason" = "Reason";
+
+"cart" = "Cart";
+"collection-method" = "Collection Method";
+"delivery" = "Delivery";
+"pickup" = "Pickup";
+"batch-pickup" = "Batch Pickup";
+"delivery-fee" = "Delivery Fee";
+"transaction-fee" = "Transaction Fee";
+"subtotal" = "Subtotal";
+"pay-with-total" = "Pay With Total";
+"clear-all" = "Clear All";
+"pickup-location" = "Pickup Location";
+"add" = "Add";
+"add-address" = "Add Address";
+"edit-address" = "Edit Address";
+"detail-address" = "Detail Address";
+"save" = "Save";
+"choose-location" = "Choose Location";
+"province" = "Province";
+"city" = "City";
+"agent-name" = "Agent Name";
+"select-pickup-location" = "Select Pickup Location";
+
+"open-gopay" = "Open GOPAY";
+"see-item-details" = "See Item Details";
+"payment" = "payment";
+"ended" = "Ended";
+
+"buyer-name" = "Nama Pembeli";
+"confirm-send" = "Confirm Send";
+"courier-name" = "Courier Name";
+"resi-number" = "Resi Number";
+"contact-number" = "Contact Number";
+
+"add-item" = "Add Item";
+"front-side" = "Front Side";
+"back-side" = "Back Side";
+"select-category" = "Select Category";
+
+"call" = "Call";
+"our-agent" = "Our Agent";

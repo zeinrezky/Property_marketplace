@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="tPo-lY-BW4" customClass="InvoiceListGeneratedCell" customModule="MixogyAdmin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tPo-lY-BW4" id="Kbu-Fv-tev">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haB-F3-HGw">
+                        <rect key="frame" x="20" y="0.0" width="280" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22-02-2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoD-Bo-G0U">
+                                <rect key="frame" x="205" y="8" width="63" height="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="11"/>
+                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Rp500.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t77-UR-0Xm">
+                                <rect key="frame" x="190.5" y="24" width="77.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQA-He-Y3q">
+                                <rect key="frame" x="8" y="8" width="70" height="16"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="11"/>
+                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BCA - 291391214213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGo-k5-F3J">
+                                <rect key="frame" x="8" y="24" width="170.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wGo-k5-F3J" firstAttribute="leading" secondItem="mQA-He-Y3q" secondAttribute="leading" id="0Ir-Lo-TeZ"/>
+                            <constraint firstAttribute="trailing" secondItem="t77-UR-0Xm" secondAttribute="trailing" constant="12" id="2fh-CF-30z"/>
+                            <constraint firstItem="wGo-k5-F3J" firstAttribute="top" secondItem="t77-UR-0Xm" secondAttribute="top" id="4uq-qz-STB"/>
+                            <constraint firstItem="mQA-He-Y3q" firstAttribute="top" secondItem="OoD-Bo-G0U" secondAttribute="top" id="Cyp-uM-VEk"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wGo-k5-F3J" secondAttribute="bottom" constant="9" id="HXl-K2-tbA"/>
+                            <constraint firstItem="t77-UR-0Xm" firstAttribute="leading" secondItem="wGo-k5-F3J" secondAttribute="trailing" constant="12" id="HiW-xV-rcP"/>
+                            <constraint firstItem="OoD-Bo-G0U" firstAttribute="top" secondItem="haB-F3-HGw" secondAttribute="top" constant="8" id="J1i-dV-h5T"/>
+                            <constraint firstItem="mQA-He-Y3q" firstAttribute="leading" secondItem="haB-F3-HGw" secondAttribute="leading" constant="8" id="Vdp-ak-E34"/>
+                            <constraint firstItem="wGo-k5-F3J" firstAttribute="top" secondItem="mQA-He-Y3q" secondAttribute="bottom" id="o2X-cY-ha8"/>
+                            <constraint firstItem="OoD-Bo-G0U" firstAttribute="trailing" secondItem="t77-UR-0Xm" secondAttribute="trailing" id="ogo-nI-7XP"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="t77-UR-0Xm" secondAttribute="bottom" constant="9" id="xeu-Nr-eIE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="haB-F3-HGw" firstAttribute="top" secondItem="Kbu-Fv-tev" secondAttribute="top" id="Kuc-IN-7Bk"/>
+                    <constraint firstItem="haB-F3-HGw" firstAttribute="leading" secondItem="Kbu-Fv-tev" secondAttribute="leading" constant="20" id="ejv-B6-Cz6"/>
+                    <constraint firstAttribute="trailing" secondItem="haB-F3-HGw" secondAttribute="trailing" constant="20" id="oug-Jh-zlV"/>
+                    <constraint firstAttribute="bottom" secondItem="haB-F3-HGw" secondAttribute="bottom" constant="4" id="sDo-gz-zj8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="NXP-iy-9Ld"/>
+            <connections>
+                <outlet property="amountLabel" destination="t77-UR-0Xm" id="CjQ-Ht-caX"/>
+                <outlet property="bankLabel" destination="wGo-k5-F3J" id="bxW-1n-cga"/>
+                <outlet property="containerView" destination="haB-F3-HGw" id="fS6-DB-Sr0"/>
+                <outlet property="dateLabel" destination="OoD-Bo-G0U" id="jBi-CS-WWg"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="135"/>
+        </tableViewCell>
+    </objects>
+</document>

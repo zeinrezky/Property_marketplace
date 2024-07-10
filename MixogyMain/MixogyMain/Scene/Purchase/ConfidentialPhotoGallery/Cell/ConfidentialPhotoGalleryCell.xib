@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="ConfidentialPhotoGalleryCell" customModule="MixogyMain" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUd-3y-XEb">
+                        <rect key="frame" x="20" y="16" width="280" height="152"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VR2-vq-rO4">
+                                <rect key="frame" x="12" y="6" width="256" height="140"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeN-Wg-Kjl">
+                                <rect key="frame" x="12" y="6" width="256" height="140"/>
+                                <connections>
+                                    <action selector="didTappedImage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fWr-3x-77L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VR2-vq-rO4" secondAttribute="bottom" constant="6" id="8zC-bs-dNe"/>
+                            <constraint firstAttribute="height" constant="152" id="DQD-gU-WBg"/>
+                            <constraint firstItem="PeN-Wg-Kjl" firstAttribute="bottom" secondItem="VR2-vq-rO4" secondAttribute="bottom" id="QSN-FG-ZbR"/>
+                            <constraint firstItem="PeN-Wg-Kjl" firstAttribute="top" secondItem="VR2-vq-rO4" secondAttribute="top" id="Vlc-iW-raZ"/>
+                            <constraint firstAttribute="trailing" secondItem="VR2-vq-rO4" secondAttribute="trailing" constant="12" id="WVU-Mx-tNV"/>
+                            <constraint firstItem="VR2-vq-rO4" firstAttribute="leading" secondItem="BUd-3y-XEb" secondAttribute="leading" constant="12" id="co9-gF-qDj"/>
+                            <constraint firstItem="VR2-vq-rO4" firstAttribute="top" secondItem="BUd-3y-XEb" secondAttribute="top" constant="6" id="eKP-4r-Itp"/>
+                            <constraint firstItem="PeN-Wg-Kjl" firstAttribute="leading" secondItem="VR2-vq-rO4" secondAttribute="leading" id="r8y-yL-4nf"/>
+                            <constraint firstItem="PeN-Wg-Kjl" firstAttribute="trailing" secondItem="VR2-vq-rO4" secondAttribute="trailing" id="zHO-ct-nlM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BUd-3y-XEb" secondAttribute="trailing" constant="20" id="96c-GY-lMu"/>
+                    <constraint firstItem="BUd-3y-XEb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Lr3-oO-LYr"/>
+                    <constraint firstAttribute="bottom" secondItem="BUd-3y-XEb" secondAttribute="bottom" id="dJp-6z-JpH"/>
+                    <constraint firstItem="BUd-3y-XEb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="oYY-5L-p0a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverImageView" destination="VR2-vq-rO4" id="Vjo-m9-RQe"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="127.23214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

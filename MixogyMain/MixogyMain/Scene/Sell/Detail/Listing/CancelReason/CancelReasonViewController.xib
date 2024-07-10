@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CancelReasonViewController" customModule="MixogyMain" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="08M-dj-J0Z" id="21I-NM-w4x"/>
+                <outlet property="commentTextView" destination="DwW-sh-GnR" id="qz4-Bv-yNI"/>
+                <outlet property="confirmButton" destination="Gt4-Cw-WCu" id="lpI-PB-hB7"/>
+                <outlet property="tableView" destination="Oqm-E3-QsB" id="gJq-jI-ENH"/>
+                <outlet property="titleLabel" destination="c6o-En-TqE" id="zRt-Yq-dff"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6o-En-TqE">
+                    <rect key="frame" x="20" y="62" width="58" height="24"/>
+                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                    <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPZ-fs-U87">
+                    <rect key="frame" x="20" y="799" width="374" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt4-Cw-WCu">
+                            <rect key="frame" x="195" y="0.0" width="179" height="43"/>
+                            <color key="backgroundColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="4kY-KB-XqW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                            <state key="normal" title="Confirm">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmDidTappedWithSender:" destination="-1" eventType="touchUpInside" id="Bee-Xe-SmB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08M-dj-J0Z">
+                            <rect key="frame" x="0.0" y="0.0" width="179" height="43"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="8ti-AX-bVb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelDidTappedWithSender:" destination="-1" eventType="touchUpInside" id="a5D-I7-Wmh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="08M-dj-J0Z" firstAttribute="top" secondItem="pPZ-fs-U87" secondAttribute="top" id="6c5-xd-OYw"/>
+                        <constraint firstAttribute="bottom" secondItem="08M-dj-J0Z" secondAttribute="bottom" id="6qQ-Sv-lFM"/>
+                        <constraint firstAttribute="bottom" secondItem="Gt4-Cw-WCu" secondAttribute="bottom" id="L6G-zv-ypz"/>
+                        <constraint firstAttribute="trailing" secondItem="Gt4-Cw-WCu" secondAttribute="trailing" id="UEZ-Tc-o4e"/>
+                        <constraint firstItem="Gt4-Cw-WCu" firstAttribute="leading" secondItem="08M-dj-J0Z" secondAttribute="trailing" constant="16" id="Y9R-y2-sqg"/>
+                        <constraint firstItem="Gt4-Cw-WCu" firstAttribute="top" secondItem="pPZ-fs-U87" secondAttribute="top" id="gAK-iD-7J3"/>
+                        <constraint firstItem="08M-dj-J0Z" firstAttribute="leading" secondItem="pPZ-fs-U87" secondAttribute="leading" id="snj-hI-OLD"/>
+                        <constraint firstItem="Gt4-Cw-WCu" firstAttribute="leading" secondItem="pPZ-fs-U87" secondAttribute="centerX" constant="8" id="uXu-UY-gCC"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="DwW-sh-GnR">
+                    <rect key="frame" x="20" y="692" width="374" height="87"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="ys6-XC-lqQ"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-E3-QsB">
+                    <rect key="frame" x="20" y="106" width="374" height="566"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DwW-sh-GnR" firstAttribute="top" secondItem="Oqm-E3-QsB" secondAttribute="bottom" constant="20" id="2H9-KP-Hgj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oqm-E3-QsB" secondAttribute="trailing" constant="20" id="3RY-fA-7yF"/>
+                <constraint firstItem="Oqm-E3-QsB" firstAttribute="leading" secondItem="DwW-sh-GnR" secondAttribute="leading" id="4Th-Zt-Ojg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pPZ-fs-U87" secondAttribute="trailing" constant="20" id="4gf-nB-TnO"/>
+                <constraint firstItem="c6o-En-TqE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="85A-p8-n4Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pPZ-fs-U87" secondAttribute="bottom" constant="20" id="8Fq-7W-g5j"/>
+                <constraint firstItem="pPZ-fs-U87" firstAttribute="top" secondItem="DwW-sh-GnR" secondAttribute="bottom" constant="20" id="8NY-qj-n3V"/>
+                <constraint firstItem="DwW-sh-GnR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="EdF-ek-hPM"/>
+                <constraint firstItem="c6o-En-TqE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LfM-td-gUe"/>
+                <constraint firstItem="Oqm-E3-QsB" firstAttribute="top" secondItem="c6o-En-TqE" secondAttribute="bottom" constant="20" id="NGL-un-dOw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DwW-sh-GnR" secondAttribute="trailing" constant="20" id="nTh-E4-sok"/>
+                <constraint firstItem="pPZ-fs-U87" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="q3q-xI-Y9H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="81"/>
+        </view>
+    </objects>
+</document>

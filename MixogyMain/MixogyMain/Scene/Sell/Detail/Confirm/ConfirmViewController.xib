@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmViewController" customModule="MixogyMain" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="2UG-mO-qCc" id="wXX-2v-lma"/>
+                <outlet property="confirmButton" destination="t0P-LR-Bxe" id="A5i-Ah-Cak"/>
+                <outlet property="titleLabel" destination="eCU-v6-rMW" id="347-gP-5yC"/>
+                <outlet property="view" destination="y7n-c4-BMW" id="M3R-HJ-eM7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="y7n-c4-BMW">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLH-bq-mdj">
+                    <rect key="frame" x="16" y="114.5" width="382" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0P-LR-Bxe">
+                            <rect key="frame" x="199" y="0.0" width="183" height="43"/>
+                            <color key="backgroundColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="pyL-lP-Wyp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                            <state key="normal" title="Confirm">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmDidTappedWithSender:" destination="-1" eventType="touchUpInside" id="tfZ-0X-vtW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UG-mO-qCc">
+                            <rect key="frame" x="0.0" y="0.0" width="183" height="43"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="NDa-U2-3hS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelDidTappedWithSender:" destination="-1" eventType="touchUpInside" id="fpa-ES-jba"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="t0P-LR-Bxe" secondAttribute="bottom" id="2r9-SC-8hU"/>
+                        <constraint firstItem="2UG-mO-qCc" firstAttribute="leading" secondItem="wLH-bq-mdj" secondAttribute="leading" id="6df-MZ-F19"/>
+                        <constraint firstItem="t0P-LR-Bxe" firstAttribute="leading" secondItem="2UG-mO-qCc" secondAttribute="trailing" constant="16" id="BCw-Ex-Q9e"/>
+                        <constraint firstItem="t0P-LR-Bxe" firstAttribute="leading" secondItem="wLH-bq-mdj" secondAttribute="centerX" constant="8" id="RtC-ph-t20"/>
+                        <constraint firstItem="t0P-LR-Bxe" firstAttribute="top" secondItem="wLH-bq-mdj" secondAttribute="top" id="W1J-1u-ObJ"/>
+                        <constraint firstAttribute="bottom" secondItem="2UG-mO-qCc" secondAttribute="bottom" id="fJ4-L0-CLB"/>
+                        <constraint firstItem="2UG-mO-qCc" firstAttribute="top" secondItem="wLH-bq-mdj" secondAttribute="top" id="vtS-sD-Zfk"/>
+                        <constraint firstAttribute="trailing" secondItem="t0P-LR-Bxe" secondAttribute="trailing" id="yFc-up-P44"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel Listing?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCU-v6-rMW">
+                    <rect key="frame" x="16" y="68" width="152" height="30.5"/>
+                    <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
+                    <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wLH-bq-mdj" firstAttribute="leading" secondItem="YLQ-CD-0Dy" secondAttribute="leading" constant="16" id="AU2-na-e1q"/>
+                <constraint firstItem="eCU-v6-rMW" firstAttribute="top" secondItem="YLQ-CD-0Dy" secondAttribute="top" constant="24" id="PLa-x4-NI2"/>
+                <constraint firstItem="eCU-v6-rMW" firstAttribute="leading" secondItem="YLQ-CD-0Dy" secondAttribute="leading" constant="16" id="ebg-Jq-GTz"/>
+                <constraint firstItem="wLH-bq-mdj" firstAttribute="top" secondItem="eCU-v6-rMW" secondAttribute="bottom" constant="16" id="nM6-ys-4cs"/>
+                <constraint firstItem="YLQ-CD-0Dy" firstAttribute="trailing" secondItem="wLH-bq-mdj" secondAttribute="trailing" constant="16" id="osa-YR-swe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="YLQ-CD-0Dy"/>
+            <point key="canvasLocation" x="139" y="79"/>
+        </view>
+    </objects>
+</document>

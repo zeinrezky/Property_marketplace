@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="106" id="sox-kx-Svi" customClass="SellCell" customModule="MixogyMain" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sox-kx-Svi" id="ICP-bX-V3Y">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrG-uf-24X">
+                        <rect key="frame" x="20" y="12" width="280" height="82"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6p-H3-vU7">
+                                <rect key="frame" x="16" y="12.5" width="55" height="57"/>
+                                <color key="backgroundColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="q3r-DY-mwF"/>
+                                    <constraint firstAttribute="height" constant="57" id="tPR-52-tMh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ONE OK ROCK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXV-Lm-ZR5">
+                                <rect key="frame" x="93" y="12.5" width="175" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Waiting for Payment" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt2-hA-7ZJ">
+                                <rect key="frame" x="93" y="58" width="175" height="14"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="10"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Rp5.000.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umg-rC-yJ8">
+                                <rect key="frame" x="93" y="34.5" width="175" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Xt2-hA-7ZJ" secondAttribute="bottom" constant="10" id="2tI-HY-EiQ"/>
+                            <constraint firstItem="p6p-H3-vU7" firstAttribute="centerY" secondItem="DrG-uf-24X" secondAttribute="centerY" id="59E-xv-vZw"/>
+                            <constraint firstItem="umg-rC-yJ8" firstAttribute="top" secondItem="eXV-Lm-ZR5" secondAttribute="bottom" id="QFg-kt-2aY"/>
+                            <constraint firstAttribute="trailing" secondItem="Xt2-hA-7ZJ" secondAttribute="trailing" constant="12" id="Qt2-jr-JCs"/>
+                            <constraint firstItem="umg-rC-yJ8" firstAttribute="trailing" secondItem="eXV-Lm-ZR5" secondAttribute="trailing" id="bbZ-3f-oVW"/>
+                            <constraint firstItem="eXV-Lm-ZR5" firstAttribute="trailing" secondItem="Xt2-hA-7ZJ" secondAttribute="trailing" id="cAy-wE-XxA"/>
+                            <constraint firstItem="umg-rC-yJ8" firstAttribute="leading" secondItem="eXV-Lm-ZR5" secondAttribute="leading" id="cF1-Tk-V4I"/>
+                            <constraint firstItem="eXV-Lm-ZR5" firstAttribute="leading" secondItem="p6p-H3-vU7" secondAttribute="trailing" constant="22" id="lwX-nl-Pd8"/>
+                            <constraint firstItem="eXV-Lm-ZR5" firstAttribute="top" secondItem="p6p-H3-vU7" secondAttribute="top" id="mUJ-c1-g54"/>
+                            <constraint firstItem="Xt2-hA-7ZJ" firstAttribute="leading" secondItem="umg-rC-yJ8" secondAttribute="leading" id="nLa-t0-Eto"/>
+                            <constraint firstAttribute="height" constant="82" id="sid-Hu-OV1"/>
+                            <constraint firstItem="p6p-H3-vU7" firstAttribute="leading" secondItem="DrG-uf-24X" secondAttribute="leading" constant="16" id="yBc-yW-z5S"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DrG-uf-24X" secondAttribute="bottom" constant="12" id="80y-FJ-EGj"/>
+                    <constraint firstItem="DrG-uf-24X" firstAttribute="top" secondItem="ICP-bX-V3Y" secondAttribute="top" constant="12" id="C6a-SN-3As"/>
+                    <constraint firstItem="DrG-uf-24X" firstAttribute="leading" secondItem="ICP-bX-V3Y" secondAttribute="leading" constant="20" id="CWP-rE-gGn"/>
+                    <constraint firstAttribute="trailing" secondItem="DrG-uf-24X" secondAttribute="trailing" constant="20" id="FLC-Rk-Dge"/>
+                    <constraint firstItem="DrG-uf-24X" firstAttribute="top" secondItem="ICP-bX-V3Y" secondAttribute="top" constant="12" id="gSz-PI-T67"/>
+                    <constraint firstAttribute="trailing" secondItem="DrG-uf-24X" secondAttribute="trailing" constant="20" id="n7d-Ve-Cw3"/>
+                    <constraint firstItem="DrG-uf-24X" firstAttribute="leading" secondItem="ICP-bX-V3Y" secondAttribute="leading" constant="20" id="odn-4s-los"/>
+                    <constraint firstAttribute="bottom" secondItem="DrG-uf-24X" secondAttribute="bottom" constant="12" id="pN2-6b-Ygj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="LkY-e8-sKj"/>
+            <connections>
+                <outlet property="amountLabel" destination="umg-rC-yJ8" id="Zw7-2v-mfI"/>
+                <outlet property="containerView" destination="DrG-uf-24X" id="OTq-vn-71i"/>
+                <outlet property="coverImageView" destination="p6p-H3-vU7" id="IpU-uh-5pX"/>
+                <outlet property="statusLabel" destination="Xt2-hA-7ZJ" id="DPd-ub-gNg"/>
+                <outlet property="titleLabel" destination="eXV-Lm-ZR5" id="Nv4-6i-jKY"/>
+            </connections>
+            <point key="canvasLocation" x="50.724637681159422" y="110.49107142857143"/>
+        </tableViewCell>
+    </objects>
+</document>

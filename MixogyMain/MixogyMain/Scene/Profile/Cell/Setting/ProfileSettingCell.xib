@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="420" id="BKT-Ht-pbp" customClass="ProfileSettingCell" customModule="MixogyMain" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BKT-Ht-pbp" id="bDb-C2-nR5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfr-Rw-M7O">
+                        <rect key="frame" x="20" y="64" width="280" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="cgO-lJ-DZI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="19"/>
+                        <state key="normal" title="Log Out">
+                            <color key="titleColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="logout:" destination="BKT-Ht-pbp" eventType="touchUpInside" id="a2F-pu-LjT"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04c-nj-PFy">
+                        <rect key="frame" x="158" y="119" width="142" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="T6A-KF-agz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                        <state key="normal" title="Change Password">
+                            <color key="titleColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="changePasswordDidTapped:" destination="BKT-Ht-pbp" eventType="touchUpInside" id="QLW-vV-sAy"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearby Radius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqI-Ny-RK7">
+                        <rect key="frame" x="20" y="174" width="121.5" height="25"/>
+                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                        <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1300" minValue="100" maxValue="2500" translatesAutoresizingMaskIntoConstraints="NO" id="3Gw-tL-Bil">
+                        <rect key="frame" x="18" y="236" width="284" height="31"/>
+                        <color key="minimumTrackTintColor" red="0.30196078431372547" green="0.82352941176470584" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="maximumTrackTintColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="thumbTintColor" red="0.12941176470588234" green="0.66274509803921566" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBarColor">
+                                <color key="value" red="0.30196078430000001" green="0.82352941180000006" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedBarColor">
+                                <color key="value" red="0.77647058820000003" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="markColor">
+                                <color key="value" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="handlerColor">
+                                <color key="value" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="sliderChanged:" destination="BKT-Ht-pbp" eventType="touchUpInside" id="NYa-XI-5Pr"/>
+                            <action selector="sliderOnChanged:" destination="BKT-Ht-pbp" eventType="valueChanged" id="OyS-Th-j4Z"/>
+                        </connections>
+                    </slider>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Language" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr1-In-0Th">
+                        <rect key="frame" x="20" y="303" width="150.5" height="25"/>
+                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                        <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffe-Nw-e0P">
+                        <rect key="frame" x="270" y="297" width="30" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="b6Y-8B-wZv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                        <state key="normal" title="EN">
+                            <color key="titleColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="changeLanguage:" destination="BKT-Ht-pbp" eventType="touchUpInside" id="bL6-tj-hVN"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQr-Me-Px4">
+                        <rect key="frame" x="20" y="358" width="63" height="25"/>
+                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                        <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pg-vL-htr">
+                        <rect key="frame" x="188" y="352" width="112" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="ZID-hH-UB1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                        <state key="normal" title="Select Tutorial">
+                            <color key="titleColor" red="0.12941176469999999" green="0.66274509800000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="guide:" destination="BKT-Ht-pbp" eventType="touchUpInside" id="Gsj-D8-YMy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Gw-tL-Bil" firstAttribute="top" secondItem="eqI-Ny-RK7" secondAttribute="bottom" constant="37" id="1b1-Jy-PN2"/>
+                    <constraint firstItem="3Gw-tL-Bil" firstAttribute="leading" secondItem="eqI-Ny-RK7" secondAttribute="leading" id="68w-mq-9qe"/>
+                    <constraint firstAttribute="bottom" secondItem="sQr-Me-Px4" secondAttribute="bottom" constant="37" id="8a1-uv-62T"/>
+                    <constraint firstItem="sQr-Me-Px4" firstAttribute="leading" secondItem="Rr1-In-0Th" secondAttribute="leading" id="CL1-q2-Y6N"/>
+                    <constraint firstItem="0pg-vL-htr" firstAttribute="trailing" secondItem="ffe-Nw-e0P" secondAttribute="trailing" id="FXr-bc-eaj"/>
+                    <constraint firstItem="3Gw-tL-Bil" firstAttribute="trailing" secondItem="04c-nj-PFy" secondAttribute="trailing" id="Fi5-eg-Id6"/>
+                    <constraint firstItem="ffe-Nw-e0P" firstAttribute="trailing" secondItem="04c-nj-PFy" secondAttribute="trailing" id="Ism-D7-BSl"/>
+                    <constraint firstItem="sQr-Me-Px4" firstAttribute="top" secondItem="Rr1-In-0Th" secondAttribute="bottom" constant="30" id="JPR-pj-kUh"/>
+                    <constraint firstItem="wfr-Rw-M7O" firstAttribute="top" secondItem="bDb-C2-nR5" secondAttribute="top" constant="64" id="KoJ-U1-PuG"/>
+                    <constraint firstItem="04c-nj-PFy" firstAttribute="top" secondItem="wfr-Rw-M7O" secondAttribute="bottom" constant="18" id="Sr4-9n-kar"/>
+                    <constraint firstItem="0pg-vL-htr" firstAttribute="centerY" secondItem="sQr-Me-Px4" secondAttribute="centerY" id="UnT-3r-Fo9"/>
+                    <constraint firstItem="eqI-Ny-RK7" firstAttribute="leading" secondItem="bDb-C2-nR5" secondAttribute="leading" constant="20" id="a85-VF-X7c"/>
+                    <constraint firstItem="wfr-Rw-M7O" firstAttribute="leading" secondItem="bDb-C2-nR5" secondAttribute="leading" constant="20" id="cHc-Kg-poe"/>
+                    <constraint firstItem="Rr1-In-0Th" firstAttribute="leading" secondItem="eqI-Ny-RK7" secondAttribute="leading" id="k4Q-eR-M4G"/>
+                    <constraint firstAttribute="trailing" secondItem="wfr-Rw-M7O" secondAttribute="trailing" constant="20" id="nK5-WQ-LnY"/>
+                    <constraint firstItem="eqI-Ny-RK7" firstAttribute="top" secondItem="04c-nj-PFy" secondAttribute="bottom" constant="18" id="puu-pC-x6K"/>
+                    <constraint firstItem="Rr1-In-0Th" firstAttribute="top" secondItem="3Gw-tL-Bil" secondAttribute="bottom" constant="37" id="qHQ-zi-eNr"/>
+                    <constraint firstItem="ffe-Nw-e0P" firstAttribute="centerY" secondItem="Rr1-In-0Th" secondAttribute="centerY" id="sqO-U8-4ik"/>
+                    <constraint firstItem="04c-nj-PFy" firstAttribute="trailing" secondItem="wfr-Rw-M7O" secondAttribute="trailing" id="yVC-dl-IzD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="iPc-C5-LEb"/>
+            <connections>
+                <outlet property="changeLanguageLabel" destination="Rr1-In-0Th" id="lYR-rR-4Op"/>
+                <outlet property="changePasswordButton" destination="04c-nj-PFy" id="rOP-XC-l8u"/>
+                <outlet property="languageButton" destination="ffe-Nw-e0P" id="eHB-hT-QH7"/>
+                <outlet property="logoutButton" destination="wfr-Rw-M7O" id="egg-v7-pPf"/>
+                <outlet property="nearbyLabel" destination="eqI-Ny-RK7" id="sB6-6E-4Dj"/>
+                <outlet property="slider" destination="3Gw-tL-Bil" id="Fla-oi-AZD"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="215.29017857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
